@@ -10,3 +10,5 @@ class Consts(object):
     """
     screen_resolution = (1680, 1050)
     full_screen = False
+    default_map_file = "map1.json"
+    tile_size = 64

@@ -5,7 +5,7 @@ Space Farm
 """
 
 # Standard lib imports
-import os, json
+import os, sys, json
 
 # Framework imports
 from myrmidon import Game, Entity
@@ -26,7 +26,7 @@ class Window(Entity):
 
     def execute(self):
         self.media = Media()
-        self.map = Map(self, os.path.join('maps', 'map1.json'))
+        self.map = Map(self, os.path.join('maps', Consts.default_map_file))
         while True:
             if Game.keyboard_key_released(K_q):
                 self.quit_game()
